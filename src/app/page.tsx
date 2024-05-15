@@ -265,7 +265,7 @@ useEffect(() => {
         </div>
 
         <div className="bg-white md:py-4 py-2 my-5 md:w-[600px] mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-sm">
+          <p className="pl-5 md:text-xl font-bold text-xs">
             What currencies does Yoba support?
           </p>
           <Image
@@ -278,8 +278,8 @@ useEffect(() => {
         </div>
 
         <div className="bg-white md:py-4 py-2 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-sm">
-            Are there any fee associated with using Yoba?
+          <p className="pl-5 md:text-xl font-bold text-xs">
+            Are there any fee associad with using Yoba?
           </p>
           <Image
             src={"/down.png"}
@@ -291,7 +291,7 @@ useEffect(() => {
         </div>
 
         <div className="bg-white md:py-4 py-2 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-sm">
+          <p className="pl-5 md:text-xl font-bold text-xs">
             How do I add funds to my Yoba account?
           </p>
           <Image
