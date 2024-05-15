@@ -46,7 +46,7 @@ useEffect(() => {
               <h1>Your Instant</h1>
               <h1>Virtual Dollar Card</h1>
             </div>
-            <p className="pt-4">Click, Pay, Explore. It's that Easy. Go global with Yobaa.</p>
+            <p className="pt-4">Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.</p>
           </div>
           <div className="flex justify-center mt-16 lg:mt-4 ">
             <Image
@@ -110,7 +110,7 @@ useEffect(() => {
         <div className="pt-24">
           <h1 className="font-bold text-3xl py-2 text-center ">How it works</h1>
           <p className="text-sm text-center">
-            Click, Pay, Explore. It's that Easy. Go global with Yobaa.
+            Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.
           </p>
 
           <div className="md:flex justify-center m-5 md:m-24    py-8 md:py-0">
@@ -202,7 +202,7 @@ useEffect(() => {
               Hear from our happy users
             </h1>
             <p className="md:text-sm text-xs">
-              Click, Pay, Explore. It's that Easy. Go global with Yobaa.
+              Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.
             </p>
           </div>
 
@@ -216,7 +216,7 @@ useEffect(() => {
               <div className="bg-[#A555F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
                 <p className="text-right text-sm md:text-base p-5 ">
                   Shopping from international brands was always a luxury I
-                  couldn't afford. Yobaa changed that! No more hidden fees or
+                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
                   conversion headaches. Now I can indulge in my fashion passion
                   without breaking the bank
                 </p>
@@ -227,7 +227,7 @@ useEffect(() => {
               <div className="bg-[#5565F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem]   rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
                 <p className="text-right text-sm md:text-base p-5">
                   Shopping from international brands was always a luxury I
-                  couldn't afford. Yobaa changed that! No more hidden fees or
+                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
                   conversion headaches. Now I can indulge in my fashion passion
                   without breaking the bank
                 </p>
@@ -238,7 +238,7 @@ useEffect(() => {
               <div className="bg-[#55B3F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-2xl">
                 <p className="text-right text-sm md:text-base p-5">
                   Shopping from international brands was always a luxury I
-                  couldn't afford. Yobaa changed that! No more hidden fees or
+                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
                   conversion headaches. Now I can indulge in my fashion passion
                   without breaking the bank
                 </p>
@@ -305,7 +305,7 @@ useEffect(() => {
             Still have a questions?
           </p>
           <p className="text-xs md:w-[26rem] mx-auto my-2">
-            Can’t find the answer you’re looking for? Please send a message to
+            Can&apos;t find the answer you&apos;re looking for? Please send a message to
             our friendly team help@yooba.ai
           </p>
         </div>
