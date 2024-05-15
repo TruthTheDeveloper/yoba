@@ -4,29 +4,26 @@ import { useEffect, useState } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 import SideBar from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import classes from "./styles.module.css"
-
+import classes from "./styles.module.css";
 
 export default function Home() {
+  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
-  const [openDrawer, setOpenDrawer] = useState<boolean>(false)
-
-useEffect(() => {
-  if (openDrawer) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'auto';
-  }
-}, [openDrawer]);
+  useEffect(() => {
+    if (openDrawer) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [openDrawer]);
 
   return (
     <main className=" bg-[white] text-[#0B102D] ">
       <section className="bg-[#0B102D] h-screen ">
         <div className="hidden lg:flex justify-between pl-48 pr-48 pt-8">
-          
-         <div className="">
-         <Image src={"/Logo.png"} height={50} width={170} alt="src" />
-         </div>
+          <div className="">
+            <Image src={"/Logo.png"} height={50} width={170} alt="src" />
+          </div>
           <div className="text-white">
             <ul className="flex justify-between">
               <li className="mx-4">Home</li>
@@ -38,16 +35,28 @@ useEffect(() => {
             Downlaod App
           </div>
         </div>
-        <div className="  cursor-pointer lg:hidden z-10 " onClick={() => setOpenDrawer(!openDrawer)}><GiHamburgerMenu size={40} className="text-white ml-auto" /></div>
-        <SideBar openDrawer={openDrawer} setOpenDrawer={() => setOpenDrawer(false)}/>
+        <div
+          className="  cursor-pointer lg:hidden z-10 "
+          onClick={() => setOpenDrawer(!openDrawer)}
+        >
+          <GiHamburgerMenu size={40} className="text-white ml-auto" />
+        </div>
+        <SideBar
+          openDrawer={openDrawer}
+          setOpenDrawer={() => setOpenDrawer(false)}
+        />
 
         <div>
           <div className="text-white text-center  pt-48 px-1">
-            <div className={`text-[42px] md:text-[50px] lg:text-[72px] font-bold ${classes.clash}`}>
+            <div
+              className={`text-[42px] md:text-[50px] lg:text-[72px] font-bold ${classes.clash}`}
+            >
               <h1>Your Instant</h1>
               <h1>Virtual Dollar Card</h1>
             </div>
-            <p className="pt-4">Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.</p>
+            <p className="pt-4">
+              Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.
+            </p>
           </div>
           <div className="flex justify-center mt-16 lg:mt-4 ">
             <Image
@@ -67,7 +76,7 @@ useEffect(() => {
           </div>
         </div>
       </section>
-       <section className="py-24 ">
+      <section className="py-24 ">
         <div className="text-center px-3 md:px-0">
           <h1 className="font-bold text-2xl md:text-3xl py-2">
             Discover the Yoba Advantage
@@ -91,7 +100,9 @@ useEffect(() => {
           </div>
           <div className="md:flex flex-col gap-4 md:w-[14rem]">
             <div className="bg-[#FD8CF2] rounded-2xl md:flex flex-col justify-end text-center md:h-[13rem] my-3 md:my-0">
-              <p className="py-6 text-sm md:text-base font-bold">Zero conversion or maintenance fees</p>
+              <p className="py-6 text-sm md:text-base font-bold">
+                Zero conversion or maintenance fees
+              </p>
             </div>
             <div className="bg-[#6DE96D] rounded-2xl md:flex flex-col justify-end text-center md:h-[8rem] my-3 md:my-0">
               <Image
@@ -115,21 +126,15 @@ useEffect(() => {
           </p>
 
           <div className="md:flex justify-center m-5 md:m-24    py-8 md:py-0">
-            <div className='basis-1/2 '>
+            <div className="basis-1/2 ">
               <div className={`  ${classes.imagecontainer}`}>
-              <Image
-                src={"/screen.png"}
-                alt="src"
-                
-              
-    layout="fill"
-
-                className={`${classes.image}`}
-                
-
-              />
+                <Image
+                  src={"/screen.png"}
+                  alt="src"
+                  layout="fill"
+                  className={`${classes.image}`}
+                />
               </div>
-
             </div>
 
             <div className="basis-1/2 md:pl-4 lg:pl-24  lg:w-[70%]  mx-auto md:mx-0 ">
@@ -164,7 +169,6 @@ useEffect(() => {
                 <div className="md:ml-8 ml-4 w-[18rem] md:w-[100%]">
                   <h1 className="font-bold text-lg">Create your card</h1>
                   <p className="text-sm w-full   lg:w-[24rem]">
-                  
                     Once your account is set up, you can create your virtual
                     dollar card effortlessly. You can also customize your card
                     to reflect your style and preferences.
@@ -210,46 +214,65 @@ useEffect(() => {
           <div className="flex"></div>
 
           <div>
-          <ScrollContainer
-            className="md:flex gap-5 w-full px-5 md:px-24 overflow-hidden cursor-pointer"
-            horizontal
-          >
-            <div>
-              <div className="bg-[#A555F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
-                <p className="text-right text-sm md:text-base p-5 ">
-                  Shopping from international brands was always a luxury I
-                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
-                  conversion headaches. Now I can indulge in my fashion passion
-                  without breaking the bank
-                </p>
+            <ScrollContainer
+              className="md:flex gap-5 w-full px-5 md:px-24 overflow-hidden cursor-pointer"
+              horizontal
+            >
+              <div>
+                <div className="bg-[#A555F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
+                  <p className="text-right text-sm md:text-base p-5 ">
+                    Shopping from international brands was always a luxury I
+                    couldn&apos;t afford. Yobaa changed that! No more hidden
+                    fees or conversion headaches. Now I can indulge in my
+                    fashion passion without breaking the bank
+                  </p>
+                </div>
+                <Image
+                  src={"/vector.png"}
+                  width={20}
+                  height={10}
+                  alt=""
+                  className="ml-auto -mt-5"
+                />
               </div>
-              <Image src={'/vector.png'} width={20} height={10} alt="" className="ml-auto -mt-5"/>
-            </div>
-            <div>
-              <div className="bg-[#5565F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem]   rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
-                <p className="text-right text-sm md:text-base p-5">
-                  Shopping from international brands was always a luxury I
-                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
-                  conversion headaches. Now I can indulge in my fashion passion
-                  without breaking the bank
-                </p>
+              <div>
+                <div className="bg-[#5565F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem]   rounded-t-3xl rounded-bl-3xl rounded-br-[1.8rem]">
+                  <p className="text-right text-sm md:text-base p-5">
+                    Shopping from international brands was always a luxury I
+                    couldn&apos;t afford. Yobaa changed that! No more hidden
+                    fees or conversion headaches. Now I can indulge in my
+                    fashion passion without breaking the bank
+                  </p>
+                </div>
+                <Image
+                  src={"/vector2.png"}
+                  width={20}
+                  height={10}
+                  alt=""
+                  className="ml-auto -mt-5"
+                />
               </div>
-              <Image src={'/vector2.png'} width={20} height={10} alt="" className="ml-auto -mt-5"/>
-            </div>
-            <div>
-              <div className="bg-[#55B3F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-2xl">
-                <p className="text-right text-sm md:text-base p-5">
-                  Shopping from international brands was always a luxury I
-                  couldn&apos;t afford. Yobaa changed that! No more hidden fees or
-                  conversion headaches. Now I can indulge in my fashion passion
-                  without breaking the bank
-                </p>
+              <div>
+                <div className="bg-[#55B3F6] md:min-w-[25rem] cursor-pointer lg:min-w-[34rem] h-[12rem] rounded-2xl">
+                  <p className="text-right text-sm md:text-base p-5">
+                    Shopping from international brands was always a luxury I
+                    couldn&apos;t afford. Yobaa changed that! No more hidden
+                    fees or conversion headaches. Now I can indulge in my
+                    fashion passion without breaking the bank
+                  </p>
+                </div>
               </div>
-            </div>
-          </ScrollContainer>
+            </ScrollContainer>
           </div>
           <div>
-            <Image src={"/Logo.png"} height={100} width={250} alt="src" objectFit="cover" className="mx-auto mt-24"/>
+            <Image
+              src={"/Logo.png"}
+              height={100}
+              width={250}
+              alt="src"
+              objectFit="cover"
+              className="mx-auto mt-24"
+            />
           </div>
         </div>
       </section>
@@ -308,8 +331,8 @@ useEffect(() => {
             Still have a questions?
           </p>
           <p className="text-xs md:w-[26rem] mx-auto my-2">
-            Can&apos;t find the answer you&apos;re looking for? Please send a message to
-            our friendly team help@yooba.ai
+            Can&apos;t find the answer you&apos;re looking for? Please send a
+            message to our friendly team help@yooba.ai
           </p>
         </div>
       </section>
@@ -319,7 +342,7 @@ useEffect(() => {
 
         <div className="bg-[#C935D2] h-[20rem]  md:h-[18rem] mx-5 md:w-[70%] md:mx-auto  mt-12 text-white    rounded-3xl text-center">
           <h1 className="text-4xl font-bold pt-16">Join Yobaa Today</h1>
-          <p className="text-sm md:w-[30rem] mx-auto mt-4">
+          <p className="text-sm md:w-[30rem] mx-auto mt-4 ">
             Experience the freedom of borderless spending. Claim your free card
             and unlock a world of possibilities.
           </p>
@@ -345,47 +368,55 @@ useEffect(() => {
         <div className="bg-[#FC8D8A] mx-14 md:w-[64%] h-[1rem] md:mx-auto rounded-b-xl"></div>
 
         <div className="text-white md:flex  justify-between mt-12 md:mt-48 lg:mt-56 ">
-          <Image src={"/Logo.png"} height={50} width={170} alt="src" className="mx-auto lg:mx-0"/>
-          <p className="text-xs md:text-base my-4 text-center">© 2024 Yooba Plc. All Rights Reserved</p>
+          <Image
+            src={"/Logo.png"}
+            height={50}
+            width={170}
+            alt="src"
+            className="mx-auto lg:mx-0"
+          />
+          <p className="text-xs md:text-base my-4 text-center">
+            © 2024 Yooba Plc. All Rights Reserved
+          </p>
           <div className="flex justify-center md:justify-left">
             <Image
               src={"/instagram.png"}
-    width={50}
-    height={10}
+              width={50}
+              height={10}
               alt="src"
               className="mx-2"
             />
             <Image
               src={"/facebook.png"}
-    width={50}
-    height={10}
+              width={50}
+              height={10}
               alt="src"
               className="mx-2"
             />
             <Image
               src={"/instagram.png"}
-    width={50}
-    height={10}
+              width={50}
+              height={10}
               alt="src"
               className="mx-2"
             />
             <Image
               src={"/linkedln.png"}
-    width={50}
-    height={10}
+              width={50}
+              height={10}
               alt="src"
               className="mx-2"
             />
             <Image
               src={"/twitter.png"}
-    width={50}
-    height={10}
+              width={50}
+              height={10}
               alt="src"
               className="mx-2"
             />
           </div>
         </div>
-      </div>   
+      </div>
     </main>
   );
 }
