@@ -367,7 +367,7 @@ export default function Home() {
         <div className="bg-[#8C50EC] mx-12 md:w-[66%] h-[1rem] md:mx-auto rounded-b-xl"></div>
         <div className="bg-[#FC8D8A] mx-14 md:w-[64%] h-[1rem] md:mx-auto rounded-b-xl"></div>
 
-        <div className="text-white md:flex  justify-between mt-12 md:mt-48 lg:mt-56 ">
+        <div className="text-white md:flex  justify-between mt-12 md:mt-48 lg:mt-56 md:mx-6">
           <Image
             src={"/Logo.png"}
             height={50}
