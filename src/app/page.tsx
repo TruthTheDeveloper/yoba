@@ -6,6 +6,7 @@ import SideBar from "./SideBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import classes from "./styles.module.css"
 
+
 export default function Home() {
 
   const [openDrawer, setOpenDrawer] = useState<boolean>(false)
@@ -42,7 +43,7 @@ useEffect(() => {
 
         <div>
           <div className="text-white text-center  pt-48 px-1">
-            <div className="text-[42px] md:text-[50px] lg:text-[72px] font-bold">
+            <div className={`text-[42px] md:text-[50px] lg:text-[72px] font-bold ${classes.clash}`}>
               <h1>Your Instant</h1>
               <h1>Virtual Dollar Card</h1>
             </div>
@@ -208,6 +209,7 @@ useEffect(() => {
 
           <div className="flex"></div>
 
+          <div>
           <ScrollContainer
             className="md:flex gap-5 w-full px-5 md:px-24 overflow-hidden cursor-pointer"
             horizontal
@@ -245,6 +247,7 @@ useEffect(() => {
               </div>
             </div>
           </ScrollContainer>
+          </div>
           <div>
             <Image src={"/Logo.png"} height={100} width={250} alt="src" objectFit="cover" className="mx-auto mt-24"/>
           </div>

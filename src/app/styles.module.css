@@ -15,3 +15,43 @@
     position: relative !important;
     height: unset !important;
   }
+
+
+  @font-face {
+    font-family:clash;
+    src: url('../../public/ClashDisplay-Variable.ttf');
+  }
+  
+  .clash{
+    font-family: clash;
+  }
+
+
+  .pictures{
+    overflow-y:scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.pictures::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.scroll_container{
+    animation: slide 30s linear infinite;
+    position: absolute;
+  
+}
+
+@keyframes slide{
+    0%{
+        left:0
+    }
+
+    100%{
+        left:-100%
+    }
+}
+
+  
