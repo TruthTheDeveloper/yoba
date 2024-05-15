@@ -72,7 +72,7 @@ useEffect(() => {
             Discover the Yoba Advantage
           </h1>
           <p className="text-xs md:text-sm">
-            Click, Pay, Explore. It's that Easy. Go global with Yobaa.
+            Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.
           </p>
         </div>
 
@@ -257,7 +257,7 @@ useEffect(() => {
             Got Questions
           </h1>
           <p className="text-sm">
-            Click, Pay, Explore. It's that Easy. Go global with Yobaa.
+            Click, Pay, Explore. It&apos;s that Easy. Go global with Yobaa.
           </p>
         </div>
 
