@@ -39,7 +39,7 @@ export default function Home() {
           className="  cursor-pointer lg:hidden z-10 "
           onClick={() => setOpenDrawer(!openDrawer)}
         >
-          <GiHamburgerMenu size={40} className="text-white ml-auto" />
+          <GiHamburgerMenu size={60} className="text-white ml-auto pt-5" />
         </div>
         <SideBar
           openDrawer={openDrawer}
