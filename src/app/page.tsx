@@ -139,8 +139,8 @@ export default function Home() {
 
             <div className="basis-1/2 md:pl-4 lg:pl-24  lg:w-[70%]  mx-auto md:mx-0 ">
               <div className="flex my-4">
-                <div className="bg-white h-[45px] w-[60px] md:h-[40px] md:w-[50px] text-center py-3 rounded-full font-bold text-lg">
-                  1
+                <div className="">
+                  <p className="bg-white  px-3 text-center py-1 rounded-full font-bold text-lg">1</p>
                 </div>
                 <div className="md:ml-8 ml-4 ">
                   <h1 className="font-bold text-lg">Download App</h1>
@@ -151,8 +151,8 @@ export default function Home() {
               </div>
 
               <div className="flex my-8">
-                <div className="bg-white h-[45px] w-[50px] md:h-[40px] md:w-[50px] text-center py-3 rounded-full font-bold text-lg">
-                  2
+                <div className="">
+                 <p className="bg-white  px-3 text-center py-1 rounded-full font-bold text-lg">2</p> 
                 </div>
                 <div className="md:ml-8 ml-4 ">
                   <h1 className="font-bold text-lg">Create your account</h1>
@@ -163,8 +163,8 @@ export default function Home() {
               </div>
 
               <div className="flex my-4">
-                <div className="bg-white h-[45px] w-[50px] md:h-[40px] md:w-[50px] text-center py-3 rounded-full font-bold text-lg">
-                  3
+                <div className="">
+                 <p className="bg-white  px-3 text-center py-1 rounded-full font-bold text-lg">3</p> 
                 </div>
                 <div className="md:ml-8 ml-4 w-[18rem] md:w-[100%]">
                   <h1 className="font-bold text-lg">Create your card</h1>
@@ -277,7 +277,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#A3A1F7] h-[45rem] p-5">
+      <section className="bg-[#A3A1F7] h-[55rem] p-5">
         <div className="text-center pt-24 pb-8">
           <h1 className="font-bold text-3xl py-2 text-center ">
             Got Questions
@@ -288,7 +288,7 @@ export default function Home() {
         </div>
 
         <div className="bg-white md:py-4 py-2 my-5 md:w-[600px] mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-xs">
+          <p className="pl-5 pt-1 md:pt-0 md:text-xl font-bold text-xs">
             What currencies does Yoba support?
           </p>
           <Image
@@ -300,8 +300,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="bg-white md:py-4 py-2 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-xs">
+        <div className="bg-white md:py-4 py-1 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
+          <p className="pl-5 pt-1 md:pt-0 md:text-xl font-bold text-xs">
             Are there any fee associad with using Yoba?
           </p>
           <Image
@@ -313,8 +313,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="bg-white md:py-4 py-2 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
-          <p className="pl-5 md:text-xl font-bold text-xs">
+        <div className="bg-white md:py-4 py-1 my-5 md:w-[600px]  mx-auto rounded-xl flex justify-between">
+          <p className="pl-5 pt-1 md:pt-0 md:text-xl font-bold text-xs">
             How do I add funds to my Yoba account?
           </p>
           <Image
