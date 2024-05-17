@@ -277,7 +277,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#A3A1F7] h-[55rem] p-5">
+      <section className="bg-[#A3A1F7] h-[45rem] md:h-[55rem] p-5">
         <div className="text-center pt-24 pb-8">
           <h1 className="font-bold text-3xl py-2 text-center ">
             Got Questions
@@ -330,7 +330,7 @@ export default function Home() {
           <p className="text-center font-bold text-xl">
             Still have a questions?
           </p>
-          <p className="text-xs md:w-[26rem] mx-auto my-2">
+          <p className="text-xs md:w-[26rem] mx-auto my-2 px-2 md:px-0">
             Can&apos;t find the answer you&apos;re looking for? Please send a
             message to our friendly team help@yooba.ai
           </p>
